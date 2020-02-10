@@ -45,12 +45,7 @@
 
         public void Defence(int damage, Chinese chinese, Virus virus)
         {
-            int currentDamage = damage;
-
-            //if (IsInFected)
-              //  currentDamage += extaDamage;
-
-            DecreaseImmunity(currentDamage, chinese);
+            DecreaseImmunity(damage, chinese);
 
             if (PercentageOfImmunity <= 40 && NameInfactedVirus == null)
             {
