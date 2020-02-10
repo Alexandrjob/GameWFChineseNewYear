@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace GameWFChineseNewYear
+﻿namespace GameWFChineseNewYear
 {
-    class Virus
+    public class Virus
     {
         public int Damage { get; protected set; } = 2;
         public string VirusName { get; protected set; } = "Virus";

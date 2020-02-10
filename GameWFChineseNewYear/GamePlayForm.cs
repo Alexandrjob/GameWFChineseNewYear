@@ -5,6 +5,10 @@ namespace GameWFChineseNewYear
 {
     public partial class GamePlayForm : Form
     {
+        //private Chinese Chinese;
+
+        public Chinese Chinese { get; set; }
+
         public GamePlayForm()
         {
             InitializeComponent();
@@ -13,9 +17,14 @@ namespace GameWFChineseNewYear
             buttonSleepChinece.Parent = pictureBox1;
         }
 
-        private void buttonFeedChinece_Click(object sender, EventArgs e)
+        private void ButtonFeedChinece_Click(object sender, EventArgs e)
         {
+            Chinese.Immunity.BoostImmunity(3);
+        }
 
+        private void ButtonSleepChinece_Click(object sender, EventArgs e)
+        {
+            Chinese.Immunity.BoostImmunity(10);
         }
     }
 }

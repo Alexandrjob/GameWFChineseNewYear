@@ -1,6 +1,6 @@
 ﻿namespace GameWFChineseNewYear
 {
-    sealed class Chinese
+    sealed public class Chinese
     {
         public Immunity Immunity { get; private set; }
         public bool IsDead { get; private set; }

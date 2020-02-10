@@ -7,8 +7,9 @@ namespace GameWFChineseNewYear
 {
     public partial class MainForm : Form
     {
-        static World world = new World();
-        static GamePlayForm gamePlayForm = new GamePlayForm();
+         
+        private static GamePlayForm gamePlayForm = new GamePlayForm();
+        private static World world = new World(gamePlayForm);
 
         public MainForm()
         {
@@ -39,6 +40,8 @@ namespace GameWFChineseNewYear
         {
             this.Visible = false;
 
+            gamePlayForm.Chinese = world.Chinese;
+            
             gamePlayForm.Show();
             gamePlayForm.Refresh();
 
@@ -49,7 +52,7 @@ namespace GameWFChineseNewYear
 
         private void Go()
         {
-            world.RunTheWorld(gamePlayForm);
+            world.RunTheWorld();
         }
     }
 }

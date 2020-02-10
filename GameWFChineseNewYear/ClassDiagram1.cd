@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="GameWFChineseNewYear.World" Collapsed="true">
+    <Position X="8.75" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAEAAAAAAAAIAAAAAAAABAAAAAAQAgAACAAA=</HashCode>
+      <FileName>World.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameWFChineseNewYear.Virus" Collapsed="true">
+    <Position X="7" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAAAAAAAgAAAAIAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Virus.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameWFChineseNewYear.Program" Collapsed="true">
+    <Position X="9.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameWFChineseNewYear.MainForm" Collapsed="true">
+    <Position X="9.75" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAkAAAACAAAAABAACAgAACEAAAAgBAAAAIEABAAAA=</HashCode>
+      <FileName>MainForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameWFChineseNewYear.Immunity" Collapsed="true">
+    <Position X="8.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIBAAAAAAAAAAgAAEAAAAAAQAAAAAAAAQgAAAAA=</HashCode>
+      <FileName>Immunity.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameWFChineseNewYear.GamePlayForm" Collapsed="true">
+    <Position X="11" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAEAIACAAABEIAACAAAACAAAAAAAAAAgAEABgAAA=</HashCode>
+      <FileName>GamePlayForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameWFChineseNewYear.CoronaVirus" Collapsed="true">
+    <Position X="5.25" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CoronaVirus.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameWFChineseNewYear.Chinese" Collapsed="true">
+    <Position X="8.75" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAIAAAEAAAAEAABAAAAAAAAAAAAAAAgABA=</HashCode>
+      <FileName>Chinese.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="8.92" />
+</ClassDiagram>

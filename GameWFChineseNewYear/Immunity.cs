@@ -1,6 +1,6 @@
 ﻿namespace GameWFChineseNewYear
 {
-    class Immunity
+    public class Immunity
     {
         private readonly int extaDamage = 2;
         private int percentageOfImmunity;
@@ -27,22 +27,6 @@
             NameInfactedVirus = virus;
             IsInFected = isInfected;
         }
-
-        public void DecreaseImmunity(int percent, Chinese chinese)
-        {
-            if (NameInfactedVirus != null)
-            {
-                PercentageOfImmunity -= NameInfactedVirus.Damage;
-            }
-            else
-            {
-                PercentageOfImmunity -= percent + extaDamage;
-            }
-
-            if (PercentageOfImmunity == 0)
-                chinese.KillTheChinese();
-        }
-
         public void Defence(int damage, Chinese chinese, Virus virus)
         {
             DecreaseImmunity(damage, chinese);
@@ -52,6 +36,26 @@
                 IsInFected = true;
                 NameInfactedVirus = virus;
             }
+        }
+
+        public void DecreaseImmunity(int percent, Chinese chinese)
+        {
+            if (NameInfactedVirus != null)
+            {
+                PercentageOfImmunity -= NameInfactedVirus.Damage + extaDamage;
+            }
+            else
+            {
+                PercentageOfImmunity -= percent;
+            }
+
+            if (PercentageOfImmunity == 0)
+                chinese.KillTheChinese();
+        }
+
+        public void BoostImmunity(int percent)
+        {
+            PercentageOfImmunity += percent;
         }
     }
 }

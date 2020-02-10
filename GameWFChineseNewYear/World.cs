@@ -10,18 +10,23 @@ namespace GameWFChineseNewYear
         private static CoronaVirus coronaVirus = new CoronaVirus();
         private static Virus virus = new Virus();
 
-        public void RunTheWorld(GamePlayForm gamePlayForm)
+        private int minPercentageOfImmunity = 50;
+        private int maxPercentageOfImmunity = 100;
+        private int percentageOfImmunity;
+
+        public Chinese Chinese { get; private set; }
+
+        public World(GamePlayForm gamePlayForm)
         {
-            int minPercentageOfImmunity = 50;
-            int maxPercentageOfImmunity = 100;
-            int percentageOfImmunity;
-
             percentageOfImmunity = random.Next(minPercentageOfImmunity, maxPercentageOfImmunity);
-            Chinese chineseMan = new Chinese(gamePlayForm, percentageOfImmunity);
+            Chinese = new Chinese(gamePlayForm, percentageOfImmunity);
+        }
 
-            while (!chineseMan.IsDead)
+        public void RunTheWorld()
+        {
+            while (!Chinese.IsDead)
             {
-                LifeCycle(chineseMan);
+                LifeCycle(Chinese);
                 Thread.Sleep(1000);
             }
             Application.Exit();

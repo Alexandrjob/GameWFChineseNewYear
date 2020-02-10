@@ -56,7 +56,7 @@ namespace GameWFChineseNewYear
             this.buttonFeedChinece.Size = new System.Drawing.Size(276, 29);
             this.buttonFeedChinece.TabIndex = 1;
             this.buttonFeedChinece.Text = "Покормить китайца +3";
-            this.buttonFeedChinece.Click += new System.EventHandler(this.buttonFeedChinece_Click);
+            this.buttonFeedChinece.Click += new System.EventHandler(this.ButtonFeedChinece_Click);
             // 
             // buttonSleepChinece
             // 
@@ -68,6 +68,7 @@ namespace GameWFChineseNewYear
             this.buttonSleepChinece.Size = new System.Drawing.Size(357, 29);
             this.buttonSleepChinece.TabIndex = 2;
             this.buttonSleepChinece.Text = "Пустить китайца поспать +10";
+            this.buttonSleepChinece.Click += new System.EventHandler(this.ButtonSleepChinece_Click);
             // 
             // label
             // 
