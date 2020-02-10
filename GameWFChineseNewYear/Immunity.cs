@@ -36,7 +36,7 @@
             }
             else
             {
-                PercentageOfImmunity -= percent;
+                PercentageOfImmunity -= percent + extaDamage;
             }
 
             if (PercentageOfImmunity == 0)
@@ -47,8 +47,8 @@
         {
             int currentDamage = damage;
 
-            if (IsInFected)
-                currentDamage += extaDamage;
+            //if (IsInFected)
+              //  currentDamage += extaDamage;
 
             DecreaseImmunity(currentDamage, chinese);
 

@@ -27,10 +27,15 @@
 
         public string ToString(Virus virus)
         {
+            GamePlayForm.labelPercentageOfImmunity.Text = Immunity.PercentageOfImmunity.ToString();
+            GamePlayForm.labelIsinFacted.Text = Immunity.IsInFected.ToString();
+            GamePlayForm.labelVirusName.Text = Immunity.NameInfactedVirus?.VirusName.ToString() ?? virus.VirusName.ToString();
+
             return string.Format("[ Immunity: {0}%; Damage: {1}; isInfected: {2}; AttackVirusName: {3}; isDead: {4} ]",
                 Immunity.PercentageOfImmunity,
                 Immunity.NameInfactedVirus?.Damage ?? virus.Damage,
-                Immunity.IsInFected, Immunity.NameInfactedVirus?.VirusName ?? virus.VirusName,
+                Immunity.IsInFected, 
+                Immunity.NameInfactedVirus?.VirusName ?? virus.VirusName,
                 IsDead);
         }
     }
