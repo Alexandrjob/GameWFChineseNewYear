@@ -30,6 +30,7 @@ namespace GameWFChineseNewYear
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.buttonFeedChinece = new System.Windows.Forms.Label();
             this.buttonSleepChinece = new System.Windows.Forms.Label();
             this.label = new System.Windows.Forms.Label();
@@ -42,6 +43,7 @@ namespace GameWFChineseNewYear
             this.label4 = new System.Windows.Forms.Label();
             this.labelVirusName = new System.Windows.Forms.Label();
             this.labelIsinFacted = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFaceChinece)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -206,6 +208,7 @@ namespace GameWFChineseNewYear
         public System.Windows.Forms.Label labelPercentageOfImmunity;
         public System.Windows.Forms.Label labelVirusName;
         public System.Windows.Forms.Label labelIsinFacted;
+        private System.Windows.Forms.Timer timer1;
     }
 }
 

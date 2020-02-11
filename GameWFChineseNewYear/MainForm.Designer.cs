@@ -45,7 +45,7 @@
             this.buttonStartGame.TabIndex = 1;
             this.buttonStartGame.Text = "Start Game";
             this.buttonStartGame.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.buttonStartGame.Click += new System.EventHandler(this.buttonStartGame_Click);
+            this.buttonStartGame.Click += new System.EventHandler(this.ButtonStartGame_Click);
             this.buttonStartGame.MouseDown += new System.Windows.Forms.MouseEventHandler(this.buttonStartGame_MouseDown);
             this.buttonStartGame.MouseEnter += new System.EventHandler(this.buttonStartGame_MouseEnter);
             this.buttonStartGame.MouseLeave += new System.EventHandler(this.buttonStartGame_MouseLeave);

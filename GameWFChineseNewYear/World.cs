@@ -1,10 +1,10 @@
 ﻿using System;
+//using Timer = System.Windows.Forms.Timer;
 using System.Threading;
-using System.Windows.Forms;
 
 namespace GameWFChineseNewYear
 {
-    class World
+    public class World
     {
         private static Random random = new Random();
         private static CoronaVirus coronaVirus = new CoronaVirus();
@@ -14,7 +14,6 @@ namespace GameWFChineseNewYear
         private int maxPercentageOfImmunity = 100;
         private int percentageOfImmunity;
 
-        //public GamePlayForm GamePlayForm { get; set; }
         public Chinese Chinese { get; private set; }
 
         public World(GamePlayForm gamePlayForm)
@@ -25,18 +24,24 @@ namespace GameWFChineseNewYear
 
         public void RunTheWorld()
         {
-            while (!Chinese.IsDead)
+            // устанавливаем метод обратного вызова
+            TimerCallback tm = new TimerCallback(LifeCycle);
+            // создаем таймер
+            Timer timer = new Timer(tm, null, 0, 2000);
+
+            /*while (!Chinese.IsDead)
             {
-                LifeCycle(Chinese);
-                Thread.Sleep(500);
+                LifeCycle();
+                Thread.Sleep(2000);
             }
             Application.Exit();
+            */
         }
 
-        private static void LifeCycle(Chinese chineseMan)
+        private void LifeCycle(object sender)
         {
             var currentVirus = EvaluateVirus();
-            currentVirus.Attack(chineseMan);
+            currentVirus.Attack(Chinese);
         }
 
         private static Virus EvaluateVirus()
