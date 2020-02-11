@@ -42,11 +42,13 @@ namespace GameWFChineseNewYear
         private void ButtonFeedChinece_Click(object sender, EventArgs e)
         {
             Chinese.Immunity.BoostImmunity(3);
+            
         }
 
         private void ButtonSleepChinece_Click(object sender, EventArgs e)
         {
             Chinese.Immunity.BoostImmunity(10);
+            Chinese.OutputInformation();
         }
 
         private void GamePlayForm_FormClosed(object sender, FormClosedEventArgs e)

@@ -24,6 +24,11 @@
             GamePlayForm.stateChinece.Text = this.ToString(virus);
             GamePlayForm.stateChinece.Refresh();
         }
+        
+        public void OutputInformation()
+        {
+            ToString(null);
+        }
 
         public string ToString(Virus virus)
         {
