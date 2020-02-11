@@ -4,7 +4,7 @@
     {
         public CoronaVirus()
         {
-            Damage = 3;
+            Damage = 2;
             VirusName = "CoronaVirus";
         }
     }

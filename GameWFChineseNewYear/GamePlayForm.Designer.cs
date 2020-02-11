@@ -185,6 +185,7 @@ namespace GameWFChineseNewYear
             this.Controls.Add(this.pictureBox1);
             this.Name = "GamePlayForm";
             this.Text = "ChineceNewYers";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.GamePlayForm_FormClosed);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFaceChinece)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

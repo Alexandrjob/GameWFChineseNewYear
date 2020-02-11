@@ -7,15 +7,36 @@ namespace GameWFChineseNewYear
 {
     public partial class MainForm : Form
     {
-         
-        private static GamePlayForm gamePlayForm = new GamePlayForm();
-        private static World world = new World(gamePlayForm);
+        private static World world;
 
         public MainForm()
         {
             InitializeComponent();
         }
 
+        private void buttonStartGame_Click(object sender, EventArgs e)
+        {
+            Thread t = new Thread(Go);
+            GamePlayForm gamePlayForm = new GamePlayForm(this,t);
+            world = new World(gamePlayForm);
+            gamePlayForm.Chinese = world.Chinese;
+
+            this.Visible = false;
+
+            gamePlayForm.Show();
+            gamePlayForm.Refresh();
+
+
+            
+            Control.CheckForIllegalCrossThreadCalls = false;
+            t.Start();
+        }
+
+        private void Go()
+        {
+            world.RunTheWorld();
+        }
+        
         private void buttonStartGame_MouseEnter(object sender, EventArgs e)
         {
             buttonStartGame.Size = new Size(260, 60);
@@ -36,23 +57,9 @@ namespace GameWFChineseNewYear
             buttonStartGame.Size = new Size(255, 55);
         }
 
-        private void buttonStartGame_Click(object sender, EventArgs e)
+        private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
         {
-            this.Visible = false;
-
-            gamePlayForm.Chinese = world.Chinese;
-            
-            gamePlayForm.Show();
-            gamePlayForm.Refresh();
-
-            Thread t = new Thread(Go);
-            Control.CheckForIllegalCrossThreadCalls = false;
-            t.Start();
-        }
-
-        private void Go()
-        {
-            world.RunTheWorld();
+            this.Close();
         }
     }
 }

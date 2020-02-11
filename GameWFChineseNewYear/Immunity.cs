@@ -2,7 +2,7 @@
 {
     public class Immunity
     {
-        private readonly int extaDamage = 2;
+        private readonly int extaDamage = 1;
         private int percentageOfImmunity;
 
         public bool IsInFected { get; set; }

@@ -14,6 +14,7 @@ namespace GameWFChineseNewYear
         private int maxPercentageOfImmunity = 100;
         private int percentageOfImmunity;
 
+        //public GamePlayForm GamePlayForm { get; set; }
         public Chinese Chinese { get; private set; }
 
         public World(GamePlayForm gamePlayForm)
@@ -27,7 +28,7 @@ namespace GameWFChineseNewYear
             while (!Chinese.IsDead)
             {
                 LifeCycle(Chinese);
-                Thread.Sleep(1000);
+                Thread.Sleep(500);
             }
             Application.Exit();
         }
