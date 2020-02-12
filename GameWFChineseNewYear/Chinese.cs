@@ -27,7 +27,7 @@
         
         public void OutputInformation()
         {
-            ToString(null);
+            GamePlayForm.labelPercentageOfImmunity.Text = Immunity.PercentageOfImmunity.ToString();
         }
 
         public string ToString(Virus virus)

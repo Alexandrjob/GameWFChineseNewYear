@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Drawing;
 using System.Windows.Forms;
-using System.Threading;
 
 namespace GameWFChineseNewYear
 {
@@ -40,11 +39,6 @@ namespace GameWFChineseNewYear
         private void buttonStartGame_MouseLeave(object sender, EventArgs e)
         {
             buttonStartGame.Size = new Size(255, 55);
-        }
-
-        private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            this.Close();
         }
     }
 }

@@ -1,6 +1,6 @@
 ﻿using System;
-//using Timer = System.Windows.Forms.Timer;
 using System.Threading;
+using System.Windows.Forms;
 
 namespace GameWFChineseNewYear
 {
@@ -24,18 +24,17 @@ namespace GameWFChineseNewYear
 
         public void RunTheWorld()
         {
-            // устанавливаем метод обратного вызова
-            TimerCallback tm = new TimerCallback(LifeCycle);
-            // создаем таймер
-            Timer timer = new Timer(tm, null, 0, 2000);
+            //TimerCallback tm = new TimerCallback(LifeCycle);
+            //Timer timer = new Timer(tm, null, 1000, 500);
 
-            /*while (!Chinese.IsDead)
+            while (!Chinese.IsDead)
             {
-                LifeCycle();
-                Thread.Sleep(2000);
+                LifeCycle(Chinese);
+                Thread.Sleep(1000);
             }
             Application.Exit();
-            */
+            
+
         }
 
         private void LifeCycle(object sender)

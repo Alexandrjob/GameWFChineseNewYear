@@ -10,8 +10,9 @@ namespace GameWFChineseNewYear
 
         public Chinese Chinese { get; set; }
         public MainForm MainForm { get; private set; }
-        public World World { get; private set; }
+        public static World World { get; private set; }
 
+        private Thread t = new Thread(Go);
 
         public GamePlayForm( MainForm mainForm, Thread thread)
         {
@@ -22,37 +23,33 @@ namespace GameWFChineseNewYear
 
             World = new World(this);
             Chinese = World.Chinese;
-
+            MainForm = mainForm;
 
             //Запускаем World в другом потоке 
             //Это необходимо для: читабельности, прогрузки формы, быстродействия
-            Thread t = new Thread(Go);
+            
+            //t.IsBackground = true;
+            t.Priority = ThreadPriority.Lowest;
             Control.CheckForIllegalCrossThreadCalls = false;
-            t.Start();
-
-            MainForm = mainForm;
+            t.Start();     
+            //Go();
         }
-        private void Go()
-        {
-            World.RunTheWorld();
-        }
-
-
+        private static void Go() =>World.RunTheWorld();
 
         private void ButtonFeedChinece_Click(object sender, EventArgs e)
         {
             Chinese.Immunity.BoostImmunity(3);
-            
         }
 
         private void ButtonSleepChinece_Click(object sender, EventArgs e)
         {
-            Chinese.Immunity.BoostImmunity(10);
+            Chinese.Immunity.BoostImmunity(20);
             Chinese.OutputInformation();
         }
 
         private void GamePlayForm_FormClosed(object sender, FormClosedEventArgs e)
         {
+            t.Abort();
             MainForm.Dispose();
             Application.Exit();
 
