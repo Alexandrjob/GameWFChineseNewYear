@@ -35,8 +35,6 @@ namespace GameWFChineseNewYear
             this.buttonSleepChinece = new System.Windows.Forms.Label();
             this.label = new System.Windows.Forms.Label();
             this.stateChinece = new System.Windows.Forms.Label();
-            this.pictureBoxFaceChinece = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.labelPercentageOfImmunity = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -44,6 +42,8 @@ namespace GameWFChineseNewYear
             this.labelVirusName = new System.Windows.Forms.Label();
             this.labelIsinFacted = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.pictureBoxFaceChinece = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFaceChinece)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -93,27 +93,6 @@ namespace GameWFChineseNewYear
             this.stateChinece.Size = new System.Drawing.Size(134, 25);
             this.stateChinece.TabIndex = 4;
             this.stateChinece.Text = "Жив, не жив";
-            // 
-            // pictureBoxFaceChinece
-            // 
-            this.pictureBoxFaceChinece.Image = global::GameWFChineseNewYear.Properties.Resources.FaceChinece;
-            this.pictureBoxFaceChinece.Location = new System.Drawing.Point(3, 9);
-            this.pictureBoxFaceChinece.Name = "pictureBoxFaceChinece";
-            this.pictureBoxFaceChinece.Size = new System.Drawing.Size(208, 216);
-            this.pictureBoxFaceChinece.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBoxFaceChinece.TabIndex = 0;
-            this.pictureBoxFaceChinece.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Image = global::GameWFChineseNewYear.Properties.Resources.clouds;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1193, 610);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 5;
-            this.pictureBox1.TabStop = false;
             // 
             // label1
             // 
@@ -168,6 +147,28 @@ namespace GameWFChineseNewYear
             this.labelIsinFacted.Size = new System.Drawing.Size(90, 17);
             this.labelIsinFacted.TabIndex = 11;
             this.labelIsinFacted.Text = " Не заражен";
+            // 
+            // pictureBoxFaceChinece
+            // 
+            this.pictureBoxFaceChinece.Image = global::GameWFChineseNewYear.Properties.Resources.FaceChinece;
+            this.pictureBoxFaceChinece.Location = new System.Drawing.Point(3, 9);
+            this.pictureBoxFaceChinece.Name = "pictureBoxFaceChinece";
+            this.pictureBoxFaceChinece.Size = new System.Drawing.Size(208, 216);
+            this.pictureBoxFaceChinece.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBoxFaceChinece.TabIndex = 0;
+            this.pictureBoxFaceChinece.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Image = global::GameWFChineseNewYear.Properties.Resources.Ground2;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(1193, 610);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 5;
+            this.pictureBox1.TabStop = false;
             // 
             // GamePlayForm
             // 
