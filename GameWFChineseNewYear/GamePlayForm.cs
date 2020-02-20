@@ -28,7 +28,6 @@ namespace GameWFChineseNewYear
             //Запускаем World в другом потоке 
             //Это необходимо для: читабельности, прогрузки формы, быстродействия
             
-            //t.IsBackground = true;
             t.Priority = ThreadPriority.Lowest;
             Control.CheckForIllegalCrossThreadCalls = false;
             t.Start();     
@@ -39,12 +38,12 @@ namespace GameWFChineseNewYear
         private void ButtonFeedChinece_Click(object sender, EventArgs e)
         {
             Chinese.Immunity.BoostImmunity(3);
+            Chinese.OutputInformation();
         }
 
         private void ButtonSleepChinece_Click(object sender, EventArgs e)
         {
-            Chinese.Immunity.BoostImmunity(20);
-            Chinese.OutputInformation();
+            Chinese.Immunity.BoostImmunity(8);
         }
 
         private void GamePlayForm_FormClosed(object sender, FormClosedEventArgs e)
@@ -52,7 +51,6 @@ namespace GameWFChineseNewYear
             t.Abort();
             MainForm.Dispose();
             Application.Exit();
-
         }
     }
 }

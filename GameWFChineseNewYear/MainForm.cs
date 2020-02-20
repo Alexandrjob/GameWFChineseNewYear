@@ -20,7 +20,7 @@ namespace GameWFChineseNewYear
             gamePlayForm.Show();
             gamePlayForm.Refresh();
         }
-        
+
         private void buttonStartGame_MouseEnter(object sender, EventArgs e)
         {
             buttonStartGame.Size = new Size(260, 60);

@@ -67,9 +67,9 @@ namespace GameWFChineseNewYear
             this.buttonSleepChinece.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.29204F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonSleepChinece.Location = new System.Drawing.Point(12, 246);
             this.buttonSleepChinece.Name = "buttonSleepChinece";
-            this.buttonSleepChinece.Size = new System.Drawing.Size(357, 29);
+            this.buttonSleepChinece.Size = new System.Drawing.Size(343, 29);
             this.buttonSleepChinece.TabIndex = 2;
-            this.buttonSleepChinece.Text = "Пустить китайца поспать +10";
+            this.buttonSleepChinece.Text = "Пустить китайца поспать +8";
             this.buttonSleepChinece.Click += new System.EventHandler(this.ButtonSleepChinece_Click);
             // 
             // label
@@ -162,7 +162,7 @@ namespace GameWFChineseNewYear
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Image = global::GameWFChineseNewYear.Properties.Resources.Ground2;
+            this.pictureBox1.Image = global::GameWFChineseNewYear.Properties.Resources.clouds;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(1193, 610);

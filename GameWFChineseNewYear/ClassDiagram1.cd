@@ -3,7 +3,7 @@
   <Class Name="GameWFChineseNewYear.World" Collapsed="true">
     <Position X="8.75" Y="2.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAIAEAAAAAAAAIAAAAAAAABAAAAAAQAgAACAAA=</HashCode>
+      <HashCode>AAAAAAAIAEAAAAAAAAIAAAAABAARAAAEAAQAgAACAAA=</HashCode>
       <FileName>World.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -24,21 +24,21 @@
   <Class Name="GameWFChineseNewYear.MainForm" Collapsed="true">
     <Position X="9.75" Y="1.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAkAAAACAAAAABAACAgAACEAAAAgBAAAAIEABAAAA=</HashCode>
+      <HashCode>AAAAAAAAACAAAAABAACAgAACAAAAAgDAAAAIAABAAAA=</HashCode>
       <FileName>MainForm.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="GameWFChineseNewYear.Immunity" Collapsed="true">
     <Position X="8.75" Y="3.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAIBAAAAAAAAAAgAAEAAAAAAQAAAAAAAAQgAAAAA=</HashCode>
+      <HashCode>AAAAAIBAAAAAAAAAAgAAEAAAAQAQAAAAAAAAQgAAAAA=</HashCode>
       <FileName>Immunity.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="GameWFChineseNewYear.GamePlayForm" Collapsed="true">
-    <Position X="11" Y="2.25" Width="1.5" />
+    <Position X="7" Y="4.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAQAEAIACAAABEIAACAAAACAAAAAAAAAAgAEABgAAA=</HashCode>
+      <HashCode>AAUQAEAIADACABEIAACAAAACEAAAAAAAAAwAEABgAAA=</HashCode>
       <FileName>GamePlayForm.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -52,7 +52,7 @@
   <Class Name="GameWFChineseNewYear.Chinese" Collapsed="true">
     <Position X="8.75" Y="3" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAIAAAEAAAAEAABAAAAAAAAAAAAAAAgABA=</HashCode>
+      <HashCode>AAAAAAAAAAAKAAAEAAAAEAABAAAAAAAAAAAAAAAgABA=</HashCode>
       <FileName>Chinese.cs</FileName>
     </TypeIdentifier>
   </Class>
