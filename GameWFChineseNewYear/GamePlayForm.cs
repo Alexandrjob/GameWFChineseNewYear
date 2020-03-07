@@ -6,8 +6,6 @@ namespace GameWFChineseNewYear
 {
     public partial class GamePlayForm : Form
     {
-        //private Chinese Chinese;
-
         public Chinese Chinese { get; set; }
         public MainForm MainForm { get; private set; }
         public static World World { get; private set; }
@@ -44,6 +42,7 @@ namespace GameWFChineseNewYear
         private void ButtonSleepChinece_Click(object sender, EventArgs e)
         {
             Chinese.Immunity.BoostImmunity(8);
+            Chinese.OutputInformation();
         }
 
         private void GamePlayForm_FormClosed(object sender, FormClosedEventArgs e)

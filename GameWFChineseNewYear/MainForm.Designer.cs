@@ -38,7 +38,7 @@
             this.buttonStartGame.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(41)))), ((int)(((byte)(16)))));
             this.buttonStartGame.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonStartGame.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonStartGame.Location = new System.Drawing.Point(254, 314);
+            this.buttonStartGame.Location = new System.Drawing.Point(250, 300);
             this.buttonStartGame.Margin = new System.Windows.Forms.Padding(0);
             this.buttonStartGame.Name = "buttonStartGame";
             this.buttonStartGame.Size = new System.Drawing.Size(255, 48);

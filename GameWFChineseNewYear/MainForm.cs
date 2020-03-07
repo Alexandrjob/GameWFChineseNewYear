@@ -23,22 +23,22 @@ namespace GameWFChineseNewYear
 
         private void buttonStartGame_MouseEnter(object sender, EventArgs e)
         {
-            buttonStartGame.Size = new Size(260, 60);
+            buttonStartGame.Location = new Point(250, 305);
         }
 
         private void buttonStartGame_MouseDown(object sender, MouseEventArgs e)
         {
-            buttonStartGame.Size = new Size(250, 50);
+            buttonStartGame.Location = new Point(250, 310);
         }
 
         private void buttonStartGame_MouseUp(object sender, MouseEventArgs e)
         {
-            buttonStartGame.Size = new Size(260, 60);
+            buttonStartGame.Location = new Point(250, 310);
         }
 
         private void buttonStartGame_MouseLeave(object sender, EventArgs e)
         {
-            buttonStartGame.Size = new Size(255, 55);
+            buttonStartGame.Location = new Point(250, 300);
         }
     }
 }
