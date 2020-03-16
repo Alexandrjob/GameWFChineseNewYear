@@ -17,7 +17,7 @@
                 {
                     percentageOfImmunity = 0;
                 }
-                else if (value > 1000)
+                else if (value > 100)
                 {
                     percentageOfImmunity = 100;
                 }
