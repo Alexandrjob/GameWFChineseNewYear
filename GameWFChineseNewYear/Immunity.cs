@@ -7,6 +7,7 @@
 
         public bool IsInFected { get; set; }
         public Virus NameInfactedVirus { get; set; }
+
         public int PercentageOfImmunity
         {
             get { return percentageOfImmunity; }
@@ -16,7 +17,7 @@
                 {
                     percentageOfImmunity = 0;
                 }
-                else if (value > 100)
+                else if (value > 1000)
                 {
                     percentageOfImmunity = 100;
                 }
@@ -41,7 +42,7 @@
             }
         }
 
-        public void DecreaseImmunity(int percent, Chinese chinese)
+        private void DecreaseImmunity(int percent, Chinese chinese)
         {
             if (NameInfactedVirus != null)
             {

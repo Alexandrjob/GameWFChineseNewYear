@@ -24,7 +24,7 @@
             GamePlayForm.stateChinece.Text = this.ToString(virus);
             GamePlayForm.stateChinece.Refresh();
         }
-        
+
         public void OutputInformation()
         {
             GamePlayForm.labelPercentageOfImmunity.Text = Immunity.PercentageOfImmunity.ToString();
@@ -39,7 +39,7 @@
             return string.Format("[ Immunity: {0}%; Damage: {1}; isInfected: {2}; AttackVirusName: {3}; isDead: {4} ]",
                 Immunity.PercentageOfImmunity,
                 Immunity.NameInfactedVirus?.Damage ?? virus.Damage,
-                Immunity.IsInFected, 
+                Immunity.IsInFected,
                 Immunity.NameInfactedVirus?.VirusName ?? virus.VirusName,
                 IsDead);
         }

@@ -13,7 +13,7 @@ namespace GameWFChineseNewYear
 
         private void ButtonStartGame_Click(object sender, EventArgs e)
         {
-            GamePlayForm gamePlayForm = new GamePlayForm(this, null);
+            GamePlayForm gamePlayForm = new GamePlayForm(this);
 
             this.Visible = false;
 

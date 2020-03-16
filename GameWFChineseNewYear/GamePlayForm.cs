@@ -12,7 +12,7 @@ namespace GameWFChineseNewYear
 
         private Thread t = new Thread(Go);
 
-        public GamePlayForm( MainForm mainForm, Thread thread)
+        public GamePlayForm(MainForm mainForm)
         {
             InitializeComponent();
             label.Parent = pictureBox1;
@@ -25,13 +25,13 @@ namespace GameWFChineseNewYear
 
             //Запускаем World в другом потоке 
             //Это необходимо для: читабельности, прогрузки формы, быстродействия
-            
+
             t.Priority = ThreadPriority.Lowest;
             Control.CheckForIllegalCrossThreadCalls = false;
-            t.Start();     
+            t.Start();
             //Go();
         }
-        private static void Go() =>World.RunTheWorld();
+        private static void Go() => World.RunTheWorld();
 
         private void ButtonFeedChinece_Click(object sender, EventArgs e)
         {
